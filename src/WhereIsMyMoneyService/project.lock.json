@@ -1067,6 +1067,19 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XDocument.dll": {}
         }
+      },
+      "WhereIsMyMoneyRepository/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v1.6",
+        "dependencies": {
+          "NETStandard.Library": "1.6.0"
+        },
+        "compile": {
+          "netstandard1.6/WhereIsMyMoneyRepository.dll": {}
+        },
+        "runtime": {
+          "netstandard1.6/WhereIsMyMoneyRepository.dll": {}
+        }
       }
     }
   },
@@ -4013,11 +4026,17 @@
         "ref/xamarintvos10/_._",
         "ref/xamarinwatchos10/_._"
       ]
+    },
+    "WhereIsMyMoneyRepository/1.0.0": {
+      "type": "project",
+      "path": "../WhereIsMyMoneyRepository/project.json",
+      "msbuildProject": "../WhereIsMyMoneyRepository/WhereIsMyMoneyRepository.xproj"
     }
   },
   "projectFileDependencyGroups": {
     "": [
-      "NETStandard.Library >= 1.6.0"
+      "NETStandard.Library >= 1.6.0",
+      "WhereIsMyMoneyRepository >= 1.0.0-*"
     ],
     ".NETStandard,Version=v1.6": []
   },
